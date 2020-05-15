@@ -1,0 +1,26 @@
+{
+  "name": "ast-training",
+  "version": "1.0.0",
+  "description": "- You must add a file called '.dev.env' in the root with the following key/val\r     - MYSQL_HOST={ipaddress of mysql host}\r     - MYSQL_PORT=3306 {or port for mysql}\r     - MYSQL_DATABASE= {database name}\r     - MYSQL_USER={username}\r     - MYSQL_PASSWORD={password}",
+  "main": "main.js",
+  "scripts": {
+    "start:dev": "env-cmd -f ./.dev.env nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solomon-bush/ast-training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solomon-bush/ast-training/issues"
+  },
+  "homepage": "https://github.com/solomon-bush/ast-training#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.4"
+  }
+}
